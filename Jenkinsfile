@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f awsdemo || true
-                docker run -d --name awsdemo -p 8081:8081 awsdemo:latest
+                docker run -d --name awsdemo -p 8081:8080 awsdemo:latest
                 '''
             }
         }
